@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+    <head>
+        <title>wozlla测试题</title>
+        <meta charset="UTF-8">
+        <meta content="width=640,user-scalable=no" name="viewport" id="viewport">
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <meta name="apple-touch-fullscreen" content="yes" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="description" content="wozlla测试题" />
+        <link rel="stylesheet" type="text/css" href="css/core.css">
+    </head>
+    <!--简单的禁止页面上下拖动的方法-->
+    <body ontouchmove="event.preventDefault()">
+        <div class="conetent" id="conetent">
+            <button class="btn1 btn" id="btn1" test="1">运行测试题1</button>
+            <button class="btn2 btn" id="btn2" test="2">运行测试题2</button>
+            <button class="back_btn" id="back_btn">返回</button>
+            <canvas id="canvas" class="canvas" width="640" height="640"></canvas>
+        </div>
+        
+        <!-- 用到的工具库 -->
+        <script type="text/javascript" charset="utf-8" src="js/zepto.js"></script>
+        <script type="text/javascript" charset="utf-8" src="js/zepto_fn.js"></script>
+        <!--  主要逻辑 -->
+        <script type="text/javascript" charset="utf-8" src="js/main.js"></script>
+    </body>
+</html>
