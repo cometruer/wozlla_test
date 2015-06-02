@@ -64,6 +64,7 @@
         		that.e.removeClass('run');
         		that.isTest2 = false;
         		that.ctx.clearRect(0, 0, 640, 640);
+        		that.ctx.globalCompositeOperation = 'source-over';
         	});
 
         	var target = null;
@@ -111,8 +112,7 @@
 			this.ctx.closePath();
 			
 			this.ctx.fill();
-			//this.ctx.clip();
-        },
+		},
 
         /*
         	测试方法1
